@@ -60,7 +60,36 @@ public class Ex {
 		
 		System.out.printf("%d",1);
 		System.out.println(); // 줄바꿈 수행(엔터키 역할)
-		System.out.printf("%d %d %d",1,2,3);
+		System.out.printf("%d %d %d\n",1,2,3);
+		System.out.printf("나이는 %d세 입니다.\n",20);
+		System.out.printf("나이는 %d세 입니다.\n",age);
+		
+		System.out.printf("현재 시각은\n %02d시 %02d분 %02d초 입니다.",14,9,30);
+		
+		System.out.println();
+		
+		//%f : 실수표현
+		System.out.printf("평균 나이는 %.1f세 입니다.\n",27.54);
+		
+		//%c : 문자표현
+		System.out.printf("정수65세 해당하는 문자는 %c\n",'A');
+		System.out.printf("정수65세 해당하는 문자는 %c\n",65);
+		
+		// char 타입 ch에 문자 r을 저장
+		char ch = 'r';
+		System.out.printf("%c\n",ch);
+		
+		// %s : 문자열 표현
+		// String타입 변수 str에 문자열 "아이티윌 부산교육센터" 저장
+		String str ="아이티윌 부산교육센터";
+		System.out.printf("%s\n",str);
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 

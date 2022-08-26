@@ -112,7 +112,7 @@ public class Ex3 {
 		
 //		l = f; // 오류 발생! float -> long 변환 시 자동 형변환 불가!
 		l = (long)f; // 형변환 연산자를 통해 long 타입으로 강제형변환 필수!
-
+		
 	}
 
 }
