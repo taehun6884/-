@@ -53,7 +53,7 @@ public class Test4 {
 		}else if(b>a) {
 			System.out.println(b+": b가 더큽니다");
 		}else {
-			System.out.println("a와b가 같음");
+			System.out.println(b+": a와b가 같음");
 		}
 		return b;
 	}
