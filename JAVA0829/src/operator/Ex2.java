@@ -93,6 +93,7 @@ public class Ex2 {
 		// NOT 연산자(!)는 현재 조건을 만족하지 않는가 판별
 		// ex) num이 0보다 작거나 100보다 큰 수가 아닌가?
 		//     = num 이 0 이상이고 100 이하인 수인가?
+		
 		System.out.println(!(num < 0 || num > 100));
 		System.out.println(num >= 0 && num <= 100); // 위의 조건과 같은 문장
 

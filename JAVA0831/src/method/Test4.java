@@ -8,15 +8,19 @@ public class Test4 {
 		// => 리턴되는 합계를 전달받아 출력
 		// ex) sum() 메서드에 10 전달 시 1 ~ 10 까지의 합 55 리턴
 		
+		
+		
+		
+		
 		// 정수 1개를 전달하면 홀수 짝수 0울 판별하여 ㄹ턴하는 check()메서드 호출
 		// => 리턴되는 결과값을 전달 받아 출력
-		check(2);
-		
+		String result =check(2);
+		System.out.println(result);
 		//정수 2개를 전달하면 두 수 중 더 큰 수를 리턴하는 max()메서드 호출
 		//ex)10,20 전달할 시 20이 리턴됨
 		//단,같은 경우 아무 숫자나 리턴(자거나 같다 도는 크커나 같다고 판별)
-		max(10,10);
-	
+		int result2 = max(10,20);
+		System.out.println(result2);
 	
 	} // main() 메서드 끝
 	
@@ -27,18 +31,28 @@ public class Test4 {
 	// 정수 1개를 전달하면 홀수 짝수 0울 판별하여 ㄹ턴하는 check()메서드 호출
 	// => 리턴되는 결과값을 전달 받아 출력
 
-	public static int check(int a) {
+	public static String check(int a) {
+		
+//		String result ="";
+//		
+//		if(a==0) {
+//			result = "0";
+//		}else if(a%2==0) {
+//			result = "짝수";
+//		}else {
+//			result = "홀수";
+//		}
+//		return result;
+		
 		
 		if(a==0) {
-			System.out.println(a+": 0입니다!");
+			return "0";
 		}else if(a%2==0) {
-			System.out.println(a+": 짝수입니다");
+			return "짝수";
 		}else {
-			System.out.println(a+": 홀수입니다");
+			return "홀수";
 		}
-		
-		
-		return a;
+
 	}
 
 	//정수 2개를 전달하면 두 수 중 더 큰 수를 리턴하는 max()메서드 호출
@@ -47,15 +61,18 @@ public class Test4 {
 
 	public static int max(int a,int b) {
 		
-		if(a > b) {
-			System.out.println(a+": a가 더큽니다");
+//		if(a >= b) {
+//			
+//			return a;
+//		}else if(b>=a) {
+//			return b;
+//		}
+		
+		if(a > b) {//a가 b보다 클경우
 			return a;
-		}else if(b>a) {
-			System.out.println(b+": b가 더큽니다");
-		}else {
-			System.out.println(b+": a와b가 같음");
+		}else{ // b가 a보다 크거나 같을 경우
+			return b;
 		}
-		return b;
 	}
 
 } // Test4 클래스 끝

@@ -56,7 +56,7 @@ public class Ex2 {
 				if(dan == 5) {
 					// 현재 단이 5단일 때 반복문을 종료하는게 아니라 
 					// 안쪽 for문을 빠져나가고 바깥쪽 for문의 다음 반복 진행
-//					break EXIT_FOR;
+					//break EXIT_FOR;
 					continue EXIT_FOR;
 				}
 				
