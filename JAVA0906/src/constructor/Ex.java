@@ -8,7 +8,7 @@ public class Ex {
 	
 	System.out.println("Person 인스턴스 생성 전");
 	Person p = new Person(); //Person 인스턴스 생성
-	// =>enw 키워드에 의해 인스턴스가 생성 될 때
+	// =>new 키워드에 의해 인스턴스가 생성 될 때
 	// Person() 형태의 생성자를 자동으로 호출하게 된다!
 	
 	System.out.println("Person 인스턴스 생성 후");
