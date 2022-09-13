@@ -16,7 +16,7 @@ public class Ex {
 		 *      
 		 * < 메서드 오버로딩 규칙(택1) >
 		 * 1. 메서드 파라미터의 데이터타입이 달라야 함
-		 * 2. 메서드 파리머터의 개수가 달라야 함   
+		 * 2. 메서드 파라미터의 개수가 달라야 함   
 		 */
 		
 		NormalMethod nm = new NormalMethod();
@@ -35,7 +35,8 @@ public class Ex {
 		// 오버로딩 메서드 중에서 파라미터가 일치하는 메서드가 자동 호출됨
 		// => 단, 메서드 호출 시점에서 각 메서드가 구분되어야 오버로딩 성립됨.
 		om.add(10, 20); // add(int, int) 호출됨!
-		om.add(1.5, 3.14); 
+		om.add(1.5, 3.14); // add(double, double) 호출됨!
+		om.add(1, 2, 3); // add(int, int, int) 호출됨!
 	
 		
 
@@ -52,12 +53,31 @@ class OverloadingMethod {
 		System.out.println(num1 + num2);
 	}
 	
-	// 2. 실수 2개를 전달받아 뎃셈 수행
+	// 2. 실수 2개를 전달받아 덧셈 수행
 	public void add(double num1, double num2) {
 		System.out.println("add(double, double) 호출됨");
 		System.out.println(num1 + num2);
 	}
 	
+	// 3. 정수 3개를 전달받아 덧셈 수행
+	public void add(int num1, int num2, int num3) {
+		System.out.println("add(int, int, int) 호출됨");
+		System.out.println(num1 + num2 + num3);
+	}
+	
+	// 주의! 파라미터의 변수명만 다를 경우 오버로딩 성립되지 않음! => 오류발생
+//	public void add(int a, int b) {
+//		System.out.println("add(int, int) 호출됨");
+//		System.out.println(num1 + num2);
+//	}
+//	=> Duplicate method add(int, int) in type OverloadingMethod
+	
+	// 주의! 리턴타입만 다를 경우 오버로딩 성립되지 않음! => 오류 발생
+//	public int add(int num1, int num2) {
+//		System.out.println("add(int, int) 호출됨!");
+//		return num1 + num2;
+//	}
+//	=> Duplicate method add(int, int) in type OverloadingMethod
 	
 }
 
@@ -86,3 +106,27 @@ class NormalMethod {
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
