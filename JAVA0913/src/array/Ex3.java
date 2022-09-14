@@ -108,10 +108,7 @@ public class Ex3 {
 				max2 = array2[i];
 			}
 		}
-		
 		System.out.println("max2 = " + max2);
-		
-		
 	}
 
 }
