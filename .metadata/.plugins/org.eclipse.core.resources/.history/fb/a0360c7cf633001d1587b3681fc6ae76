@@ -1,0 +1,18 @@
+package variable_arguments;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}
+
+class PtintMethod{
+	
+	public void print() {
+		System.out.println("전달 받은 정수 없음!");
+	}
+}

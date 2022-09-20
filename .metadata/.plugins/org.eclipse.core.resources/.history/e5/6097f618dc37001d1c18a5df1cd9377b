@@ -1,0 +1,57 @@
+package this_;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		Account ac = new Account();
+		
+		System.out.println(ac.acccountNo+ac.name+ac.balance);
+		
+		Account ac2 = new Account("111-11111-111");
+		
+		System.out.println(ac2.acccountNo);
+		
+		Account ac3 = new Account("111-11111-111","김태훈");
+		
+		System.out.println(ac3.acccountNo+ac3.name);
+		
+		Account ac4= new Account("111-11111-111","김태훈",1000);
+		
+		System.out.println(ac4.acccountNo+ac4.name+ac4.balance);
+		
+		
+	}
+
+}
+
+
+class Account{
+	String acccountNo;
+	String name;
+	int balance;
+	
+	public Account() {
+		this("111-11111-111","홍길동",0);
+		System.out.println("기본 생성자 호출");
+	}
+	
+	
+	public Account(String acoountNo) {
+		this(acoountNo,"홍길동",0);
+		System.out.println("String 생성자 호출");
+	}
+	
+	public Account(String accountNo,String name) {
+		this(accountNo,name,0);
+		System.out.println("String String 생성자 호출");
+		
+	}
+	
+	public Account(String accountNo,String name,int balance) {
+		this.acccountNo = accountNo;
+		this.name = name;
+		this.balance = balance;
+				
+		System.out.println("String String int 생성자 호출");
+	}
+}

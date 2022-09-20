@@ -1,0 +1,17 @@
+package pack_one;
+
+import java.util.Random;
+
+public class Ex {
+	
+	public static void main(String[] args) {
+		
+		Random rs;
+		
+		Ex ex = new Ex();
+		
+		ExPack ex2 = new ExPack();
+		
+		
+	}
+}

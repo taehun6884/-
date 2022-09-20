@@ -1,0 +1,24 @@
+package this_;
+
+public class Ex {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}
+
+class person{
+	private String name;
+	private int age;
+
+	public person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+}

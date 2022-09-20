@@ -1,0 +1,25 @@
+package array;
+
+public class Ex {
+
+	public static void main(String[] args) {
+		
+		int score1 = 90, score2 = 60, score3 = 80, score4  = 100,score5 = 50; 
+		int scoreTotal = score1 + score2 + score3 + score4 + score5;
+		
+		int[] score = new int[5];
+		
+		//System.out.println(score);
+		System.out.println(score[0]);
+		System.out.println(score[1]);
+		System.out.println(score[2]);
+		System.out.println(score[3]);
+		System.out.println(score[4]);
+		
+		int[] score2 = new int [6];
+		
+	}
+}
+
+
+	

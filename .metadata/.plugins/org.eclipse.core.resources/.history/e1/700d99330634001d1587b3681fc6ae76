@@ -1,0 +1,32 @@
+package this_;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		
+	MyDate d1 = new MyDate();
+	System.out.println(d1.year);
+		
+	}
+
+}
+
+class MyDate{
+	int year;
+	int month;
+	int day;
+	
+	public MyDate() {
+		
+		System.out.println("MyDate() 생성자 호출됨!");
+		
+		year = 1900;
+		month = 1;
+		day = 1;
+		
+	
+	}	
+	
+}
+
+

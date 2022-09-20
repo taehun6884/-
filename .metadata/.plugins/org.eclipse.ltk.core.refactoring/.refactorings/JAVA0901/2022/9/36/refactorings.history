@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;berak_cintinue_statement&apos; to &apos;berak_continue_statement&apos;&#x0D;&#x0A;- Original project: &apos;JAVA0901&apos;&#x0D;&#x0A;- Original element: &apos;JAVA0901/src/berak_cintinue_statement&apos;&#x0D;&#x0A;- Renamed element: &apos;JAVA0901/src/berak_continue_statement&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;berak_cintinue_statement&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;berak_cintinue_statement" name="berak_continue_statement" qualified="false" references="true" stamp="1661998954773" textual="false" version="1.0"/>
+</session>

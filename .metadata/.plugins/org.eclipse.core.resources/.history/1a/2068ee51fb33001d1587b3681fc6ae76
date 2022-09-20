@@ -1,0 +1,25 @@
+package pass_by_value;
+
+public class Ex {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}
+
+
+class PassByTest{
+	public void changePrimitiveType(int money) {
+		money -= 5000;
+		
+	}
+}
+
+class Money{
+	int money = 10000;
+	
+	
+}

@@ -1,0 +1,29 @@
+package variable_arguments;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		PtintMethod pt = new PtintMethod();
+		int[] arr= {1,2,3,4};
+		
+		pt.print();
+		pt.print(arr);
+		
+		
+	}
+
+}
+
+class PtintMethod{
+	
+	public void print() {
+		System.out.println("전달 받은 정수 없음!");
+	}
+
+	public void print(int...num) {
+		for(int i=0;i<num.length;i++) {
+		System.out.println("전달 받은 정수 :"+num);
+		}
+	}
+}

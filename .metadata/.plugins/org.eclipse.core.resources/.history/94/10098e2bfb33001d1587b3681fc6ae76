@@ -1,0 +1,17 @@
+package pass_by_value;
+
+public class Ex {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}
+
+
+class Money{
+	int money = 10000;
+	
+}

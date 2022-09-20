@@ -1,0 +1,18 @@
+package this_;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}
+
+class Account{
+	String accountNo;
+	String ownerName;
+	int balance;
+	
+}

@@ -1,0 +1,45 @@
+package staitc_member;
+
+public class Ex2 {
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+class StaticMethod{
+	private int normalVar = 10;
+	
+	private static int staticVar = 20;
+	
+	public void normalMethod() {
+		System.out.println("일반메서드 normalMethod()" );
+	
+		System.out.println("일반 메서드에서 인스턴스 변수 접근 : "+ normalVar);
+		System.out.println("일반 메서드에서 static 변수 접근 : "+staticVar);
+	
+		
+	}
+	
+	public static void staticMetho() {
+		System.out.println("정적메서드 staticMethod()");
+		
+		
+		System.out.println("static 메서드에서 인스턴스 변수 접근 : "+normalVar);
+		
+		System.out.println("static 메서드에서 static 뱐수 접근 : "+staticVar);
+	
+	}
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,29 @@
+package array;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		int money = 2600;
+		
+		int[] arr = {500,100,50,10};
+		
+		
+		
+		
+		for(int i=0;i<arr.length;i++) {
+				System.out.println("hint :" + Hint);
+			if(money / arr[0]) {
+				Hint = money / arr[i];
+			}
+		
+			System.out.println(Hint);
+		}
+		
+		
+	
+		
+		
+	}
+
+}

@@ -1,0 +1,55 @@
+package this_;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		
+	MyDate d1 = new MyDate();
+	System.out.println(d1.year+"/"+d1.month+"/"+d1.day);
+		
+	}
+
+}
+
+class MyDate{
+	int year;
+	int month;
+	int day;
+	
+	public MyDate() {
+		
+		this(199,2);
+		
+		System.out.println("MyDate() 생성자 호출됨!");
+//		year = 1900;
+//		month = 1;
+//		day = 1;
+	}
+
+	public MyDate(int year) {
+		System.out.println("MyDate(int) 생성자 호출됨!");
+		this.year = year;
+		this.month = 1;
+		day = 1;
+	}	
+	
+	public MyDate(int year, int month) {
+		System.out.println("MyDate(int,int) 생성자 호출됨!");
+		this.year = year;
+		this.month = month;
+		day = 1;
+	}	
+	
+	public MyDate(int year, int month, int day) {
+		System.out.println("MyDate(int,int,int) 생성자 호출됨!");
+		this.year = year;
+		this.month = month;
+		this.day = day;
+	}	
+	
+	
+	
+	
+}
+
+

@@ -1,0 +1,28 @@
+package array;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		int money = 2600;
+		
+		int[] arr = {500,100,50,10};
+		
+		int Hint = money / arr[0];
+		
+		for(int i=0;i<arr.length;i++) {
+				System.out.println("hint :" + Hint);
+			if(Hint >= 1) {
+				Hint = arr[i] % money;
+			}
+		
+			System.out.println(Hint);
+		}
+		
+		
+	
+		
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package staitc_member;
+
+public class Ex2 {
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+class StaticMethod{
+	private int normalVar = 10;
+	
+	
+	
+	
+	
+}

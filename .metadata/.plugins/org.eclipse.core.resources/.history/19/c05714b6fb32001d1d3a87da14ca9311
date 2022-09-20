@@ -1,0 +1,33 @@
+package method_overloading;
+
+public class Ex {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}
+
+
+
+class PrintClass{
+	
+	public void print() {
+		System.out.println("print() 메서드 호출됨!");
+		System.out.println("초대멤버 : 없음 없음 없음");
+	}
+
+	public void print(String name1) {
+		System.out.println("print(String) 메서드 호출됨!");
+		System.out.println("초대멤버: "+name1+" 없음 없음");
+	}
+	
+	public void print(String name1,String name2) {
+		System.out.println("print(String,String) 메서드 호출됨! ");
+		System.out.println("초대멤버: "+name1 + " "+name2+" 없음 ");
+	}
+	
+
+}

@@ -1,0 +1,22 @@
+package staitc_member;
+
+public class Ex {
+
+	public static void main(String[] args) {
+		
+	NormalMember n1 = new NormalMember();
+	NormalMember n2 = new NormalMember();
+		
+	System.out.println("n1.a : %d, n2.a : %d \n",n1.a,n2.a);
+	}
+
+}
+
+
+class NormalMember{
+	int a = 10;
+	int b = 20;
+	
+	
+	
+}

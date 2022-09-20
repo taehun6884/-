@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.StaticDeoptimizingNode"/>
+    <fullyQualifiedTypeName name="class_.Car"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="class_.Student"/>
+    <fullyQualifiedTypeName name="class_.Person"/>
+    <fullyQualifiedTypeName name="class_.Account2"/>
+    <fullyQualifiedTypeName name="class_.Person2"/>
+    <fullyQualifiedTypeName name="class_.Account"/>
+    <fullyQualifiedTypeName name="access_modifier.Person"/>
+    <fullyQualifiedTypeName name="method_overloading.PrintClass"/>
+    <fullyQualifiedTypeName name="variable_arguments.NormalArguments"/>
+    <fullyQualifiedTypeName name="variable_arguments.VariableArguments"/>
+    <fullyQualifiedTypeName name="variable_arguments.PtintMethod"/>
+    <fullyQualifiedTypeName name="pass_by_value.Money"/>
+    <fullyQualifiedTypeName name="pass_by_value.PassByTest"/>
+    <fullyQualifiedTypeName name="java.beans.PersistenceDelegate"/>
+    <fullyQualifiedTypeName name="this_.person"/>
+    <fullyQualifiedTypeName name="this_.MyDate"/>
+    <fullyQualifiedTypeName name="this_.Account"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="pack_two.ExPack"/>
+    <fullyQualifiedTypeName name="pack_three.ExPack"/>
+    <fullyQualifiedTypeName name="staitc_member.NormalMember"/>
+    <fullyQualifiedTypeName name="staitc_member.StaticMember"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="staitc_member.StaticMethod"/>
+</qualifiedTypeNameHistroy>

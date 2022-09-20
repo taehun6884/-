@@ -1,0 +1,48 @@
+package variable_arguments;
+
+public class Ex {
+
+	public static void main(String[] args) {
+		/*
+		 * 가변형 인자 = 비정형 인자(Variable Arguments, VARARGS)
+		 * - 메서드 파라미터를 하나의 인자만 사용하여 다양하게 전달받는 기능
+		 * - 동일한 타입의 파라미터를 0개 ~ 무한대로 전달받아 배열로 관리
+		 */
+
+		
+		NormalArguments na = new NormalArguments();
+		na.print("홍길동");
+		na.print("홍길동","이순신");
+		na.print("홍길동","이순신","강감찬");
+//		na.print("홍길동","이순신","강감찬","강진석");
+		
+		String[] strArr = {"홍길동","이순신","강감찬","강진석"};
+		na.print(strArr);
+		
+				 
+		
+	}
+
+}
+
+class NormalArguments{
+	
+	public void print(String name1) {
+		System.out.println(name1);
+	}
+	
+	public void print(String name1,String name2) {
+		System.out.println(name1+" , " + name2 );
+	}
+	
+	public void print(String name1,String name2,String name3) {
+		System.out.println(name1+" , " + name2  + " , " + name3);
+	}
+	
+	public void print(String[] names) {
+		for(int i =0;i < names.length;i++) {
+			System.out.println(names[i] + " ");
+		}
+	}
+	
+}
