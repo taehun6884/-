@@ -73,7 +73,7 @@ class PassByTest {
 		// 전달받은 주소 값에 해당하는 인스턴스에 접근하여
 		// 인스턴스 내의 멤버변수(실제 값)을 변경
 		// => 참조변수명.멤버변수에 접근 가능
-		m.money -= 5000;
+		m.money -= 6000;
 		System.out.println("changeReferenceType() 메서드의 money = " + m.money);
 	}
 }
