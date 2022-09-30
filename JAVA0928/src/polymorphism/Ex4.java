@@ -73,11 +73,25 @@ public class Ex4 {
 			sArr[i].draw();
 		}
 		
+		System.out.println("=================================");
 		
+		polymorphismDraw(sArr);
 		
-		
-
+		polymorphismDraw2(new Circle());
+		polymorphismDraw2(new Rectangle());
+		polymorphismDraw2(new Triangle());
+	
 	} // main() 메서드 끝
+	
+	public static void polymorphismDraw(Shape[] sArr) {
+		for(int i = 0;i<sArr.length; i++ ) {
+			sArr[i].draw();
+		}
+	}
+	
+	public static void polymorphismDraw2(Shape s) {
+		
+	}
 
 } // Ex4 클래스 끝
 
@@ -86,6 +100,10 @@ class Shape {
 	// 여러 도형의 공통점인 '그리다' 기능을 수행하는 draw() 메서드 정의
 	public void draw() {
 		System.out.println("도형 그리기!");
+	}
+
+	public static void polymorphismDraw2(Shape s) {
+		s.draw();
 	}
 }
 
