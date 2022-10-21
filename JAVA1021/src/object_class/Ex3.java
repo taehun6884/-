@@ -25,6 +25,21 @@ public class Ex3 {
 		A a = new A();
 		System.out.println(a);
 
+		Person p = new Person("홍길동", 20 , "031010-1234567");
+		System.out.println("사람 p의 정보 "+ p.toString());
+		System.out.println("사람 p의 정보 : "+p);
+		
+		String personInfo = p.toString();
+		
+		System.out.println("Person p 의 클래스명 : "+p.getClass().getName());
+		System.out.println("Person p의 주소 값 : "+p.hashCode());
+		
+		Person2 p2 = new Person2("홍길동", 20 , "031010-1234567");
+		System.out.println("사람 p2의 정보 "+ p2.toString());
+		System.out.println("사람 p2의 정보 : "+p2);
+		
+		System.out.println("Person p2 의 클래스명 : "+p.getClass().getName());
+		System.out.println("Person p2의 주소 값 : "+p.hashCode());
 	}
 
 }
@@ -33,11 +48,43 @@ class A { // extends Object
 	
 }
 
+class Person {
+	String name;
+	int age;
+	String jumin;
+	
+	
+	public Person(String name, int age, String jumin) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.jumin = jumin;
+	}
+
+	
+
+}
+
+class Person2 {
+	String name;
+	int age;
+	String jumin;
+	
+	
+	public Person2(String name, int age, String jumin) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.jumin = jumin;
+	}
 
 
-
-
-
-
+	@Override
+	public String toString() {
+		return "Person2 [name=" + name + ", age=" + age + ", jumin=" + jumin + "]";
+	}
+	
+	
+}
 
 
