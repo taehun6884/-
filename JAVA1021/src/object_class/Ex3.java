@@ -20,32 +20,30 @@ public class Ex3 {
 		 */
 		
 		String str = new String("자바"); // String 타입도 객체이다!
-		System.out.println(str);
+		System.out.println(str); // toString() 메서드 생략되어 있음(문자열 출력)
+		System.out.println(str.toString()); // 위의 결과와 동일함(문자열 출력)
 		
-		A a = new A();
-		System.out.println(a);
-
-		Person p = new Person("홍길동", 20 , "031010-1234567");
-		System.out.println("사람 p의 정보 "+ p.toString());
-		System.out.println("사람 p의 정보 : "+p);
+		Person p = new Person("홍길동", 20, "031010-1234567");
+		System.out.println("사람 p의 정보 : " + p.toString()); // Person@762efe5d
+		System.out.println("사람 p의 정보 : " + p); // 결과 동일
+		// => println() 메서드 내에 p 객체 정보 출력 시 toString() 생략 가능
 		
+		// 출력문이 아닌 결과값을 변수에 저장하는 경우 반드시 toString() 필수!
 		String personInfo = p.toString();
 		
-		System.out.println("Person p 의 클래스명 : "+p.getClass().getName());
-		System.out.println("Person p의 주소 값 : "+p.hashCode());
+		// Object 클래스의 toString() 메서드는 "클래스명@주소값" 형태의 문자열 리턴
+		// => 주소값은 16진수로 변환되어 문자열로 결합됨
+		System.out.println("Person p 의 클래스명 : " + p.getClass().getName());
+		System.out.println("Person p 의 주소값 : " + p.hashCode());
 		
-		Person2 p2 = new Person2("홍길동", 20 , "031010-1234567");
-		System.out.println("사람 p2의 정보 "+ p2.toString());
-		System.out.println("사람 p2의 정보 : "+p2);
+		System.out.println("-----------------------------------------");
 		
-		System.out.println("Person p2 의 클래스명 : "+p.getClass().getName());
-		System.out.println("Person p2의 주소 값 : "+p.hashCode());
+		Person2 p2 = new Person2("홍길동", 20, "031010-1234567");
+		System.out.println("p2 객체의 정보 : " + p2.toString());
+		System.out.println("p2 객체의 정보 : " + p2);
+
 	}
 
-}
-
-class A { // extends Object
-	
 }
 
 class Person {
@@ -53,23 +51,18 @@ class Person {
 	int age;
 	String jumin;
 	
-	
 	public Person(String name, int age, String jumin) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.jumin = jumin;
 	}
-
-	
-
 }
 
 class Person2 {
 	String name;
 	int age;
 	String jumin;
-	
 	
 	public Person2(String name, int age, String jumin) {
 		super();
@@ -78,13 +71,36 @@ class Person2 {
 		this.jumin = jumin;
 	}
 
-
+		
+//	@Override
+//	public String toString() {
+//		// 현재 인스턴스가 가진 멤버변수들을 모두 문자열로 결합하여 리턴
+//		// => 결합하는 형태(출력 모양)는 개발자가 알아서 결정
+//		return "이름 : " + name + ", 나이 : " + age + ", 주민번호 : " + jumin;
+//	}
+	
+	// toString() 메서드 자동 생성(오버라이딩) 단축키 : Alt + Shift + S -> S
 	@Override
 	public String toString() {
 		return "Person2 [name=" + name + ", age=" + age + ", jumin=" + jumin + "]";
 	}
-	
-	
+		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
