@@ -2,6 +2,7 @@ package collection_framework;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -47,6 +48,18 @@ public class Test {
 //			}
 //		}	
 //		System.out.println(count);	
+		Iterator<Integer> ite = myLotto.iterator();
+		
+		while(ite.hasNext()) {
+			int num = ite.next();
+
+			if(thisWeekLotto.contains(num)) {
+				count++;
+			}
+		}
+		
+		System.out.println("=================================");
+		
 		for(int num : myLotto) {
 			
 			if(thisWeekLotto.contains(num)) {
