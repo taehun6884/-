@@ -16,7 +16,7 @@ public class Ex4 {
 class Button {
 	
 	static interface OnClickListener { // 중첩 인터페이스 선언
-		public abstract void onClick();	
+		public abstract void onClick();	 
 	}
 	
 	OnClickListener listener; // 인터페이스 타입 변수(필드) 선언
